@@ -1,0 +1,199 @@
+body{
+  background-color: $color-primary;
+}
+a{
+  color: black;
+  font-family: $font-main;
+  &:focus{
+    color: grey;
+  }
+}
+p{
+text-align: left;
+}
+
+
+//home-main section ----------------------------
+.home-main{
+  margin: 0;
+  // border: 2px solid red;
+}
+.works {
+  display:flex;
+  flex-direction: column;
+  width: 99vw;
+  background-color:$color-primary;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  a{
+    color: $color-pink;
+  }
+}
+  .works-page {
+    padding: 70px 0;
+    position: relative;
+    .my-photo img{
+      transform: scale(.6);
+      position: absolute;
+      left: -22px;
+      top: -10px;
+    }
+  }
+
+//Each section contains the images of each project----
+.a-work  li {
+  @include displayAndJustify(flex, center, flex-start);
+  padding: 1%;
+  margin-bottom: 35px;
+  width: 93vw;
+  flex-wrap: wrap;
+  img{
+    padding: 2%;
+    transition: transform .5s;
+    width:300px;
+    height: 200px;
+    align-self: flex-end;
+    &:hover{
+      transform: scale(1.2) translateY(20px);
+    }
+  }
+}
+
+
+.contact-page, .about-page, .works-page{
+  h2{
+    text-align: left;
+    padding-left: 130px;
+    color: grey;
+    margin-left: 40px;
+    border-bottom: 4px solid #ff6060;
+  }
+}
+
+.contact-page, .about-page{
+  position: relative;
+  width: 100%;
+  padding: 80px 0 40px;
+  min-height: 90vh;
+  background-color: white;
+  // border-top: 2px solid grey;
+
+}
+
+.about-page{
+  .my-photo img{
+    transform: scale(.75);
+    position: absolute;
+    left: -5px;
+    top: 10px;
+  }
+  .content{
+    margin:  5%;
+    padding: 70px 3% 10px;
+    .links {
+      margin: 50px 0 20px;
+      text-align: center;
+      a{
+        font-weight: bold;
+        padding: 5px 0;
+        box-sizing: border-box;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        &:hover{
+          border-top: 2px solid #f9e879;
+          border-bottom: 2px solid #f9e879;
+          transform: scale(1.1);
+          transition: border-top .6s, border-bottom .3s, transform .3s;
+        }
+      }
+    }
+  }
+
+  .about-photos{
+    border-top: 5px solid #fffbe0;
+    background-color: #fffbe0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px 0 0;
+    .pic{
+      width: 100%;
+      /* max-height: 250px; */
+      display: flex;
+      flex-direction: row;
+      /* flex-wrap: wrap; */
+      text-align: center;
+      /* align-items: center; */
+      justify-content: center;
+      overflow: hidden;
+      li{
+        align-self: center;
+        img{
+          max-height: 160px;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
+
+.contact-page{
+  .my-photo img{
+    transform: scale(.18);
+    position: absolute;
+    left: -290px;
+    top: -270px;
+  }
+  ul{
+    @include displayAndJustify(flex, space-around, center);
+    flex-direction: column;
+    margin: 60px 0;
+    a{
+      margin: 20px 0;
+      padding: 5px 0;
+      box-sizing: border-box;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      font-weight: bold;
+      &:hover{
+        border-top: 2px solid #f9e879;
+        border-bottom: 2px solid #f9e879;
+        transform: scale(1.1);
+        transition: border-top .6s, border-bottom .3s, transform .3s;
+
+      }
+    }
+  }
+}
+
+
+
+
+
+//Footer ------------------------
+footer{
+  text-align: center;
+  color: $font-color-secondary;
+  height: 50px;
+  padding: 20px;
+  background-color: black;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $color-pink;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transiton: all 2s ease-in-out;
+
+}

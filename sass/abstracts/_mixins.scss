@@ -1,0 +1,11 @@
+@mixin positioning($position, $width, $margin, $padding) {
+  position:  $position;
+  width: $width;
+  margin: $margin;
+  padding: $padding;
+}
+@mixin displayAndJustify($display, $justify-content, $align-items) {
+  display: $display;
+  justify-content:  $justify-content;
+  align-items:  $align-items;
+}
