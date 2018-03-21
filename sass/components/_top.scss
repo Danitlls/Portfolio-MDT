@@ -1,0 +1,27 @@
+// #topButton{
+//   width: 80px;
+//   &:hover{
+//     transform: scale(1.2);
+//   }
+// }
+
+#topButton {
+  display: none;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $color-pink;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+  &:hover{
+    transform: scale(1.1);
+    background-color: $color-accent;
+  }
+}

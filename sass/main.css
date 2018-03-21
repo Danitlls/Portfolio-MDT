@@ -396,8 +396,12 @@ template {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-.hamburger:hover {
-  cursor: pointer; }
+.hamburger:active {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: #ff6060;
+  border-radius: 30px;
+  transition: transform .2s; }
 
 #hamburger.is-active {
   -webkit-transition: all 0.3s ease-in-out;
@@ -447,12 +451,9 @@ template {
   .intro:first-child {
     opacity: .99; }
 
-.smaller {
-  height: 100px !important; }
-
 @keyframes hideIntro {
   100% {
-    height: 35vh; } }
+    height: 180px; } }
 .d {
   height: 125px;
   width: 125px;
@@ -488,7 +489,7 @@ template {
     opacity: .99;
     border-radius: 50% 50% 0 0;
     background: #f9e879;
-    transform: rotate(90deg) translateX(-190px); } }
+    transform: rotate(90deg) translateX(-220px); } }
 .name {
   position: relative;
   top: 5px;
@@ -503,12 +504,12 @@ template {
 
 @keyframes showName {
   0% {
-    margin-top: -100px; }
+    margin-top: -80px; }
   50% {
     display: none;
     opacity: .3; }
   100% {
-    margin-top: 110px;
+    margin-top: 90px;
     display: inline-block;
     opacity: 1;
     padding-left: 5px;
@@ -553,6 +554,25 @@ template {
   -moz-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp; }
+
+#topButton {
+  display: none;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ff6060;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out; }
+  #topButton:hover {
+    transform: scale(1.1);
+    background-color: #f9e879; }
 
 body {
   background-color: #dde3ed; }
@@ -697,21 +717,6 @@ footer {
   padding: 20px;
   background-color: black; }
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #ff6060;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  transiton: all 2s ease-in-out; }
-
 header {
   position: fixed;
   width: 100vw;
@@ -722,19 +727,22 @@ header {
   align-items: flex-start;
   z-index: 100; }
 
-nav {
+.large-screen {
+  display: none; }
+
+.mobile-screen {
   position: sticky;
   width: 90%;
   margin: 0 60px 0 0;
   padding: 0;
   display: none; }
-  nav .links {
+  .mobile-screen .large-links, .mobile-screen .mobile-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap; }
-    nav .links a {
+    .mobile-screen .large-links a, .mobile-screen .mobile-links a {
       background-color: rgba(247, 239, 190, 0.9);
       width: 80%;
       border-bottom: 1px solid #f9e879;
@@ -743,7 +751,7 @@ nav {
       margin-left: 10px;
       color: #736e6e;
       text-shadow: 2px 0 2px white; }
-      nav .links a:hover {
+      .mobile-screen .large-links a:hover, .mobile-screen .mobile-links a:hover {
         background-color: #f2b53e9c;
         text-shadow: none;
         transition: background-color .4s; }
@@ -756,22 +764,26 @@ h1 {
   color: lightblue; }
 
 @media all and (min-width: 750px) {
+  nav.mobile-screen ul.mobile-links {
+    display: none;
+    visibility: hidden; }
+
   header {
     right: 0px; }
 
-  nav {
+  nav.large-screen {
     position: sticky;
     width: 35%;
     margin: 0 25px;
     padding: 5px;
-    display: inline-block; }
-    nav .links {
+    display: inline-block !important; }
+    nav.large-screen .links.large-links {
       display: flex;
       justify-content: space-between;
       align-items: strech;
       flex-direction: row;
       flex-wrap: nowrap; }
-      nav .links a {
+      nav.large-screen .links.large-links a {
         cursor: pointer;
         background-color: transparent;
         width: 70%;
@@ -780,10 +792,38 @@ h1 {
         padding: 5px 0;
         margin-left: 20px;
         text-shadow: 2px 0 2px white; }
-        nav .links a:hover {
+        nav.large-screen .links.large-links a:hover {
           background-color: transparent;
           border-bottom: 3px solid #f2b53e;
           transform: scale(1.1);
           transition: transform .3s, border-bottom .4s; } }
+.my-photo-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: url("../img/star_field_full_gal.jpg");
+  background-size: contain;
+  font-size: 30px; }
+  .my-photo-space img {
+    width: 500px; }
+
+.block1 {
+  position: relative;
+  width: 90%;
+  margin: 2.5% 5%;
+  padding: 5%; }
+
+.user-flow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px; }
+  .user-flow .user-flow-text {
+    padding-right: 5%; }
+  .user-flow .diagram {
+    padding-left: 5%; }
+    .user-flow .diagram img {
+      width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

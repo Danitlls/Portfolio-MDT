@@ -6,11 +6,11 @@ function topFunction() {
 
 $(document).ready(function(){
   $(".hamburger").click(function(){
-    $("nav").toggle(800);
+    $(".mobile-screen").toggle(600);
     $(this).toggleClass("is-active");
   });
-  $(".links").click(function(){
-    $("nav").toggle(800);
+  $(".mobile-links").click(function(){
+    $(".mobile-screen").toggle(600);
     $(".hamburger").toggleClass("is-active");
   });
   // $(".intro").toggleUp(800);
@@ -19,10 +19,11 @@ $(document).ready(function(){
 
   function scrollFunction() {
       if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-          document.getElementById("myBtn").style.display = "block";
+          document.getElementById("topButton").style.display = "block";
+          document.getElementById("topButton").style.visibility = "visible";
 
       } else {
-          document.getElementById("myBtn").style.display = "none";
+          document.getElementById("topButton").style.display = "none";
       }
   }
 

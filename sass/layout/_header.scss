@@ -4,11 +4,14 @@ header{
   z-index: 100;
 }
 
-nav{
+.large-screen{
+  display: none;
+}
+.mobile-screen{
   @include positioning(sticky, 90%, 0 60px 0 0 ,0 );
   display: none;
   // top: 20px;
-  .links{
+  .large-links, .mobile-links{
     @include displayAndJustify(flex, space-around,center);
     flex-direction: column;
     flex-wrap: wrap;
@@ -40,13 +43,18 @@ color: lightblue;
 }
 
 @media all and (min-width: 750px){
+  nav.mobile-screen ul.mobile-links{
+    display: none;
+    visibility: hidden;
+  }
   header{
     right: 0px;
   }
-  nav{
+
+  nav.large-screen {
     @include positioning(sticky, 35%, 0 25px, 5px );
-    display: inline-block;
-    .links{
+    display: inline-block !important;
+    .links.large-links{
       @include displayAndJustify(flex, space-between, strech);
       flex-direction: row;
       flex-wrap: nowrap;

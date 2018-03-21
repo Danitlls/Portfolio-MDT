@@ -180,20 +180,3 @@ footer{
   padding: 20px;
   background-color: black;
 }
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: $color-pink;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  transiton: all 2s ease-in-out;
-
-}
