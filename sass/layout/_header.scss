@@ -63,10 +63,12 @@ header{
         font-size: 18px;
         color: #353535;
         &:hover {
-          background-color: transparent;
-          border-bottom: 3px solid #f2b53e;
-          transform: scale(1.1);
-          transition: transform .3s, border-bottom .4s;
+          background-color: #ff606085;
+          color: white;
+          border-bottom: 3px solid #ff6060;
+          // transform: scale(1.1);
+          transition: all .3s, border-bottom .4s;
+
         }
       }
 

@@ -1,7 +1,9 @@
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-
+//   $('#topButton').click(function(){
+//     $('html, body').animate({scrollTop:0}, 800);
+// });
 }
 
 // $('#topButton').click(function(){
@@ -23,7 +25,7 @@ $(document).ready(function(){
   });
   // $(".intro").toggleUp(800);
 
-  window.onscroll = function() {scrollFunction()};
+
 
   function scrollFunction() {
       if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
@@ -34,6 +36,8 @@ $(document).ready(function(){
           document.getElementById("topButton").style.display = "none";
       }
   }
+
+  window.onscroll = function() {scrollFunction()};
 
 
 // Hook doAnimations on scroll, and trigger a scroll
