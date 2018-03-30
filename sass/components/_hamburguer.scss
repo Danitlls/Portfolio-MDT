@@ -1,6 +1,7 @@
 #hamburger{
   position: fixed;
   right:20px;
+  background-color: #d8d9db73;
 }
 .hamburger .line{
   @include positioning(inline-block, 50px, 8px auto, 0);
@@ -13,7 +14,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.hamburger:active{
+#hamburger:active{
   cursor: pointer;
   transform: scale(1.2);
   background-color: $color-pink;
@@ -22,6 +23,7 @@
 }
 
 #hamburger.is-active{
+  border-radius: 30px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

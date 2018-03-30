@@ -9,3 +9,9 @@
   justify-content:  $justify-content;
   align-items:  $align-items;
 }
+
+@mixin fontStyle($font-family, $font-size, $font-weight) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}

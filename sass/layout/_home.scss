@@ -8,9 +8,6 @@ a{
     color: grey;
   }
 }
-p{
-text-align: left;
-}
 
 
 //home-main section ----------------------------
@@ -31,7 +28,7 @@ text-align: left;
   }
 }
   .works-page {
-    padding: 70px 0;
+    padding: 40px 0;
     position: relative;
     .my-photo img{
       transform: scale(.6);
@@ -61,7 +58,7 @@ text-align: left;
 }
 
 
-.contact-page, .about-page, .works-page{
+.contact-page, .about-page{
   h2{
     text-align: left;
     padding-left: 130px;
@@ -71,11 +68,27 @@ text-align: left;
   }
 }
 
+.works-page{
+  img{
+    display: none;
+  }
+  h2{
+    text-align: left;
+    padding-left: 0px;
+    color: grey;
+    margin-left: 4%;
+    border-bottom: 4px solid #ff6060;
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+
 .contact-page, .about-page{
   position: relative;
   width: 100%;
-  padding: 80px 0 40px;
-  min-height: 90vh;
+  padding: 70px 0 40px;
+  min-height: 70vh;
   background-color: white;
   // border-top: 2px solid grey;
 
@@ -83,14 +96,23 @@ text-align: left;
 
 .about-page{
   .my-photo img{
-    transform: scale(.75);
+    transform: scale(0.75);
     position: absolute;
     left: -5px;
     top: 10px;
+    z-index: 10;
   }
   .content{
-    margin:  5%;
-    padding: 70px 3% 10px;
+    margin: 0 5%;
+    padding: 30px 20px 10px;
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    /* position: absolute; */
+    /* top: -20px; */
+    /* right: -100px; */
+    /* clear: both; */
     .links {
       margin: 50px 0 20px;
       text-align: center;
@@ -111,27 +133,30 @@ text-align: left;
   }
 
   .about-photos{
-    border-top: 5px solid #fffbe0;
-    background-color: #fffbe0;
+    background-color: #000000;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 30px 0 0;
+    margin: 0;
+    padding: 10px 0;
     .pic{
-      width: 100%;
-      /* max-height: 250px; */
+      // height: 700px;
       display: flex;
       flex-direction: row;
-      /* flex-wrap: wrap; */
+      flex-wrap: nowrap;
       text-align: center;
       /* align-items: center; */
-      justify-content: center;
+      justify-content: space-evenly;
       overflow: hidden;
+      position: relative;
+      padding: 10px 0;
       li{
         align-self: center;
+        max-height: 170px;
+
         img{
-          max-height: 160px;
+          max-height: 200px;
           max-width: 300px;
         }
       }
@@ -176,7 +201,7 @@ text-align: left;
 footer{
   text-align: center;
   color: $font-color-secondary;
-  height: 50px;
-  padding: 20px;
+  height: 70px;
+  padding: 2% 20%;
   background-color: black;
 }

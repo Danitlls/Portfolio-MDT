@@ -1,3 +1,37 @@
+@font-face {
+    font-family: 'barlow-light';
+    src: url('../fonts/Barlow-Light.ttf');
+}
+
+
 *{
-  font-family: sans-serif;
+  font-family: 'barlow-light';
+}
+
+
+
+
+// Mixin: fontStyle($font-family, $font-size, $font-weight)
+
+h1{
+  @include fontStyle($font-main, 10px, 400);
+  text-transform: uppercase;
+  text-align: center;
+  color: lightblue;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+p{
+
 }

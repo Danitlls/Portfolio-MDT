@@ -15,6 +15,7 @@
     /* border: 2px solid red; */
     /* padding: 1%; */
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 
 
@@ -63,8 +64,8 @@
 @media all and (min-width: 650px){
   .all-the-works{
     margin: 10px;
-    border: 2px solid red;
     padding: 1% ;
+    justify-content: space-around;
 
   }
 }

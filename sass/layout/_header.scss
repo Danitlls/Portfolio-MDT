@@ -33,14 +33,6 @@ header{
     }
   }
 }
-// Header text
-h1{
-text-transform: uppercase;
-font-size: 15px;
-text-align: left;
-padding-left: 10px;
-color: lightblue;
-}
 
 @media all and (min-width: 750px){
   nav.mobile-screen ul.mobile-links{
@@ -60,13 +52,16 @@ color: lightblue;
       flex-wrap: nowrap;
       a {
         cursor: pointer;
-        background-color: transparent;
+        background-color: #f3f3f3ad;
         width: 70%;
-        border-bottom: 3px solid $color-accent;
+        border-bottom: 3px solid #f9e879;
         text-align: center;
         padding: 5px 0;
         margin-left: 20px;
-        text-shadow: 2px 0 2px white;
+        /* text-shadow: 2px 0 2px white; */
+        font-weight: bold;
+        font-size: 18px;
+        color: #353535;
         &:hover {
           background-color: transparent;
           border-bottom: 3px solid #f2b53e;

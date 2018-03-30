@@ -1,7 +1,15 @@
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
 }
+
+// $('#topButton').click(function(){
+//     $('body').animate({
+//         scrollTop: 0
+//     }, 2000);
+// });
+  // <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
 
 
 $(document).ready(function(){
