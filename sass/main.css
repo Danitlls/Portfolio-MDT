@@ -738,7 +738,7 @@ a {
 .works {
   display: flex;
   flex-direction: column;
-  width: 99vw;
+  width: 100%;
   background-color: #f3f3f3;
   height: 100%;
   justify-content: center;
@@ -793,8 +793,8 @@ a {
 .contact-page, .about-page {
   position: relative;
   width: 100%;
-  padding: 70px 0 40px;
-  min-height: 70vh;
+  padding: 70px 0 0px;
+  height: 100%;
   background-color: white; }
 
 .about-page .my-photo img {
@@ -804,16 +804,16 @@ a {
   top: 10px;
   z-index: 10; }
 .about-page .content {
-  margin: 0 5%;
-  padding: 30px 20px 10px;
+  padding: 30px;
+  margin: 150px auto;
   width: 90%;
   font-size: 16px;
   text-align: center;
-  background-color: white;
-  /* position: absolute; */
-  /* top: -20px; */
-  /* right: -100px; */
-  /* clear: both; */ }
+  background-color: white; }
+  @media (min-width: 1200px) {
+    .about-page .content {
+      margin: 80px auto;
+      width: 70%; } }
   .about-page .content .links {
     margin: 50px 0 20px;
     text-align: center; }
@@ -829,29 +829,26 @@ a {
         transform: scale(1.1);
         transition: border-top .6s, border-bottom .3s, transform .3s; }
 .about-page .about-photos {
-  background-color: #000000;
+  background-color: #000;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   margin: 0;
-  padding: 10px 0; }
+  padding: 50px 0; }
   .about-page .about-photos .pic {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    text-align: center;
-    /* align-items: center; */
-    justify-content: space-evenly;
-    overflow: hidden;
-    position: relative;
-    padding: 10px 0; }
+    justify-content: center;
+    align-items: space-evenly;
+    flex-wrap: wrap; }
     .about-page .about-photos .pic li {
-      align-self: center;
-      max-height: 170px; }
+      padding: 0px 10px 10px; }
       .about-page .about-photos .pic li img {
         max-height: 200px;
         max-width: 300px; }
+    @media (max-width: 575px) {
+      .about-page .about-photos .pic {
+        max-height: 1050px;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: baseline; } }
 
 .contact-page .my-photo img {
   transform: scale(0.18);

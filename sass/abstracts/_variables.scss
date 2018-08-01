@@ -12,3 +12,12 @@ $font-color-main:  #f9e879;
 $font-color-secondary: #ecf0f1; //light grey
 
 $a-color: #505050; //grey for font
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
