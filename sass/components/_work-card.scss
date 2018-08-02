@@ -1,43 +1,6 @@
 
 
 
-div.border {
-  border: 3px solid $color-accent;
-  width: 98%;
-  height: 340px;
-  padding: 10px;
-  position: relative;
-  margin: 4%;
-  border-radius: 10px;
-  a{
-    border-bottom: 2px solid red;
-  }
-  &:hover, &:focus{
-    border: 3px solid $color-pink;
-    img{
-      opacity: .9;
-    }
-    div.work-description{
-      border: 2px solid #d8d9db;
-      // background-color: #ffffffcf;
-      transform: translateX(42%) translateY(50px);
-    }
-    div.work-gray-bottom {
-      background-color: $color-primary;
-      color: grey;
-      padding-top: 0px;
-      div.work-skills{
-        margin-right: 60%;
-      }
-      p{
-        color: grey;
-      }
-      h4{
-        color: grey;
-      }
-    }
-  }
-}
 
 div.work-image{
   display: flex;
@@ -48,31 +11,24 @@ div.work-image{
 }
 
 div.work-gray-bottom {
-  background-color: grey;
+  background-color: #5a5a5a;
   color: white;
-  p{
-    color: $color-primary;
-  }
-  h4{
-    color: $color-primary;
-  }
   width: 100%;
-  text-align: center;
-  // color: grey;
-  padding: 20px 10px 10px;
+  /* text-align: center; */
+  font-weight: lighter;
+  line-height: 1.2rem;
+  padding: 10px;
   transition: background-color .2s ease-in-out;
-  h4{
+  h6{
+    color: $color-primary;
     text-transform: uppercase;
-    // color: $a-color;
-    text-align: center;
+    font-size: .8rem;
+    letter-spacing: .05rem;
   }
-}
-
-div.work-skills{
-  padding: 10px 0;
   p{
+    color: $color-primary;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: .8rem;
     text-align: left;
   }
 }
@@ -85,7 +41,7 @@ div.work-image-container {
 // background-image: url("http://via.placeholder.com/280x240");
   img{
     width: 100%;
-    opacity: .5;
+    opacity: .4;
     transition: opacity .3s ease-in;
     position: inherit;
     z-index: -10;
@@ -111,7 +67,7 @@ div.work-description {
   margin-left: 16%;
   left: 10%;
   border: 2px solid $color-accent;
-  transition: all 1s;
+  transition: all .6s;
   h3{
     padding: 6px 0;
   }
@@ -128,27 +84,65 @@ div.work-description {
 }
 
 
+div.border {
+  border: 3px solid $color-accent;
+  width: 98%;
+  height: 340px;
+  padding: 10px;
+  position: relative;
+  margin: 4%;
+  border-radius: 10px;
+  a{
+    border-bottom: 2px solid red;
+  }
+  &:hover, &:focus{
+    border: 3px solid $color-pink;
+    img{
+      opacity: .95;
+    }
+    div.work-description{
+      opacity: 0;
+      // border: 2px solid #d8d9db;
+      // border: 2px solid $color-pink;
+      // background-color: #ffffffcf;
+      // transform: translateX(42%) translateY(50px);
+    }
+    // div.work-gray-bottom {
+    //   background-color: $color-primary;
+    //   color: grey;
+    //   padding-top: 0px;
+    //   div.work-skills{
+    //     margin-right: 60%;
+    //   }
+    //   p{
+    //     color: grey;
+    //   }
+    //   h4{
+    //     color: grey;
+    //   }
+    // }
+  }
+}
 
 // This are rules for big screens...:
 
 @media all and (min-width: 750px){
-
-
   div.border{
     width: 45%;
     height: 360px;
     padding: 20px;
     position: relative;
     margin: 5px;
-    &:hover {
-      div.work-description{
-        transform: translateX(40%) translateY(80px);
-      }
-      div.work-skills{
-        margin-right: 40%;
-      }
-
-    }
+    margin-bottom: 2rem;
+    // &:hover {
+    //   div.work-description{
+    //     transform: translateX(40%) translateY(80px);
+    //   }
+    //   div.work-skills{
+    //     margin-right: 40%;
+    //   }
+    //
+    // }
   }
 
 
