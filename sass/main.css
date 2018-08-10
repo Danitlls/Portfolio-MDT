@@ -713,6 +713,9 @@ a {
   font-family: "Poppins"; }
   a:focus {
     color: grey; }
+  a:hover {
+    color: grey;
+    text-decoration: none; }
 
 .home-main {
   margin: 0; }

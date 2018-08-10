@@ -7,8 +7,11 @@ a{
   &:focus{
     color: grey;
   }
+  &:hover{
+    color: grey;
+    text-decoration: none;
+  }
 }
-
 
 //home-main section ----------------------------
 .home-main{
