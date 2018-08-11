@@ -6,8 +6,9 @@ div.work-image{
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 1px 5px 7px #b4b4b4;
-  height: 315px;
+  /* box-shadow: 1px 5px 7px #b4b4b4; */
+  height: 290px;
+  background-color: white;
 }
 
 div.work-gray-bottom {
@@ -129,7 +130,7 @@ div.border {
 @media all and (min-width: 750px){
   div.border{
     width: 45%;
-    height: 360px;
+    height: 335px;
     padding: 20px;
     position: relative;
     margin: 5px;
@@ -152,7 +153,7 @@ div.border {
     padding: 2%;
     background-color: white;
     position: absolute;
-    top: 90px;
+    top: 110px;
     left: 12%;
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,48 @@
+@import "compass/css3";
+
+* {
+  @include box-sizing(border-box);
+}
+
+section {
+  background: #eee;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.module {
+  width: 99%;
+  position: relative;
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+  box-shadow: 0 1px 3px rgba(black, 0.2);
+}
+
+
+
+.come-in {
+  transform: translateY(250px);
+
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+  opacity: 1;
+}
+
+@keyframes come-in {
+  from{
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

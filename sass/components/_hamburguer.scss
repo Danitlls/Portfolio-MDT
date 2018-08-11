@@ -1,14 +1,14 @@
 #hamburger{
   position: fixed;
   right:20px;
-  background-color: #d8d9db73;
+  // background-color: #d8d9db73;
 }
 .hamburger .line{
-  @include positioning(inline-block, 50px, 8px auto, 0);
-  height: 5px;
+  @include positioning(inline-block, 43px, 8px auto, 0);
+  height: 4px;
   background-color: #fff4ad;
   display: block;
-  box-shadow: 2px 1px 2px lightgrey;
+  box-shadow: 1px 1px 2px #8c7272;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
