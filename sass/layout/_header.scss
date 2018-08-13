@@ -51,6 +51,7 @@ header{
     transition: all .3s;
     &:hover{
       background: darksalmon;
+
     }
   }
   nav p {
@@ -59,31 +60,32 @@ header{
   }
 
   nav.large-screen {
-    @include positioning(sticky, 35%, 0 25px, 5px );
+    @include positioning(sticky, 230px, 0 40px, 5px );
     display: inline-block !important;
     .links.large-links{
-      @include displayAndJustify(flex, space-between, strech);
-      flex-direction: row;
-      flex-wrap: nowrap;
+      @include displayAndJustify(flex, space-between, center);
       a {
         cursor: pointer;
-        background-color: #f3f3f3ad;
-        width: 70%;
+        background-color: #f1f1f1;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border-top: 3px solid #f9e87900;
         border-bottom: 3px solid #f9e879;
-        text-align: center;
-        padding: 5px 0;
-        margin-left: 20px;
-        /* text-shadow: 2px 0 2px white; */
+        text-align: right;
+        padding: 15px;
+        margin-left: 10px;
         font-weight: bold;
-        font-size: 18px;
-        color: #353535;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #717171;
+        text-shadow: 1px 1px #f3f3f3;
+        transition: all .3s;
         &:hover {
-          background-color: #ff606085;
-          color: white;
-          border-bottom: 3px solid #ff6060;
-          // transform: scale(1.1);
-          transition: all .3s, border-bottom .4s;
-
+          background-color: #f9a8a8;
+          color: #6b6060;
+          text-shadow: 1px 1px #f1bebead;
+          border-bottom: 3px solid #f9e87900;
         }
       }
 
