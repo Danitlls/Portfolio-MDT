@@ -1,5 +1,5 @@
 header{
-  @include positioning(fixed, 100vw, 0, 10px );
+  @include positioning(fixed, 100vw, 0, 0 );
   @include displayAndJustify(flex, flex-end, flex-start);
   z-index: 100;
 }
@@ -8,28 +8,35 @@ header{
   display: none;
 }
 .mobile-screen{
-  @include positioning(sticky, 90%, 0 60px 0 0 ,0 );
+  @include positioning(sticky, 100%, 0 ,0 );
   display: none;
-  // top: 20px;
   .large-links, .mobile-links{
-    @include displayAndJustify(flex, space-around,center);
+    @include displayAndJustify(flex, space-around, center);
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 50px 0 80px;
+    border-radius: 0 0 0% 90%;
     a {
-      background-color: rgba(247, 239, 190, 0.9);
-      width: 80%;
+      width: 30%;
+      border: 1px solid transparent;
       border-bottom: 1px solid $color-accent;
       text-align: center;
-      padding: 5px 0;
-      margin-left: 10px;
+      padding: 10px;
+      margin-left: 20px;
       color: $a-color;
       text-shadow: 2px 0 2px white;
       &:hover {
-        background-color: #f2b53e9c;
+        border: 1px solid $color-accent;
+        border-top: none;
         text-shadow: none;
         transition:  background-color .4s;
       }
-
+    }
+    a:nth-child(1):hover{
+      border-top: 1px solid $color-accent;
     }
   }
 }
