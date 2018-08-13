@@ -85,7 +85,7 @@ div.work-description {
 div.border {
   border: 3px solid transparent;
   width: 98%;
-  height: 340px;
+  height: auto;
   padding: 10px;
   position: relative;
   margin: 4%;
@@ -129,7 +129,7 @@ div.border {
 @media all and (min-width: 750px){
   div.border{
     width: 45%;
-    height: 335px;
+    height: 340px;
     padding: 20px;
     position: relative;
     margin: 5px;
