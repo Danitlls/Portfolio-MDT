@@ -385,6 +385,9 @@ template {
 * {
   font-family: 'barlow-light'; }
 
+a {
+  font-family: 'barlow-light' !important; }
+
 h1 {
   font-family: "Poppins";
   font-size: 10px;
@@ -927,11 +930,19 @@ header {
   .d-logo {
     background: #f9e879;
     border-radius: 0 50% 50% 0;
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     transition: all .3s; }
     .d-logo:hover {
-      background: darksalmon; }
+      background: darksalmon;
+      color: white; }
+
+  .d-logo h6 {
+    padding-bottom: 18px;
+    letter-spacing: .1rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-orientation: sideways-right; }
 
   nav p {
     padding-bottom: 0;
@@ -939,8 +950,8 @@ header {
 
   nav.large-screen {
     position: sticky;
-    width: 230px;
-    margin: 0 40px;
+    width: 250px;
+    margin: 0 20px;
     padding: 5px;
     display: inline-block !important; }
     nav.large-screen .links.large-links {
@@ -950,13 +961,14 @@ header {
       nav.large-screen .links.large-links a {
         cursor: pointer;
         background-color: #f1f1f1;
-        width: 50px;
-        height: 50px;
+        width: 78px;
+        height: 70px;
+        text-align: center;
         border-radius: 50%;
-        border-top: 3px solid #f9e87900;
         border-bottom: 3px solid #f9e879;
-        text-align: right;
-        padding: 15px;
+        /* text-align: right; */
+        padding: 22px 2px;
+        /* padding-right: 5px; */
         margin-left: 10px;
         font-weight: bold;
         font-size: 14px;
@@ -1002,5 +1014,44 @@ header {
   width: 100%; }
   .style-guide img {
     width: 100%; }
+
+.photos {
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 10px;
+  padding: 20px 10px; }
+
+.photos img {
+  width: 100% !important;
+  height: auto !important;
+  margin-top: 10px; }
+
+@media (max-width: 1200px) {
+  .photos {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4; } }
+@media (max-width: 1000px) {
+  .photos {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3; } }
+@media (max-width: 800px) {
+  .photos {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; } }
+@media (max-width: 400px) {
+  .photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1; } }
+body {
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=main.css.map */
