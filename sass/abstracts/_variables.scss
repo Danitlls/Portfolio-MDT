@@ -1,4 +1,9 @@
-$font-main: 'Poppins';
+@font-face {
+    font-family: 'barlow-light';
+    src: url('../fonts/Barlow-Light.ttf');
+}
+
+$font-main: 'barlow-light', sans-serif;
 
 // Colors:
 

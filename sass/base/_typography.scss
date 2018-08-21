@@ -1,15 +1,12 @@
-@font-face {
-    font-family: 'barlow-light';
-    src: url('../fonts/Barlow-Light.ttf');
-}
+
 
 
 *{
-  font-family: 'barlow-light';
+  font-family: $font-main;
 }
 
 a{
-  font-family: 'barlow-light' !important;
+  font-family: $font-main !important;
 }
 
 

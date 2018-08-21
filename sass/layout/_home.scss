@@ -20,6 +20,9 @@ hr {
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
+h2{
+  font-size: 1.5rem;
+}
 h3{
   font-size: 1.3rem;
 }
@@ -30,6 +33,7 @@ h3{
   // border: 2px solid red;
 }
 .works {
+  padding-top: 50px;
   display:flex;
   flex-direction: column;
   width: 100%;
@@ -41,17 +45,17 @@ h3{
     color: $color-pink;
   }
 }
-  .works-page {
-    padding: 40px 0;
-    position: relative;
-    padding-left: 3.5%;
-    .my-photo img{
-      transform: scale(.6);
-      position: absolute;
-      left: -22px;
-      top: -10px;
-    }
-  }
+  // .works-page {
+  //   padding: 40px 0;
+  //   position: relative;
+  //   padding-left: 3.5%;
+  //   .my-photo img{
+  //     transform: scale(.6);
+  //     position: absolute;
+  //     left: -22px;
+  //     top: -10px;
+  //   }
+  // }
 
 //Each section contains the images of each project----
 .a-work  li {
@@ -71,18 +75,6 @@ h3{
     }
   }
 }
-
-
-.contact-page, .about-page{
-  h2{
-    text-align: left;
-    padding-left: 130px;
-    color: grey;
-    margin-left: 40px;
-    border-bottom: 4px solid #ff6060;
-  }
-}
-
 .works-page{
   img{
     display: none;
@@ -91,28 +83,52 @@ h3{
     text-align: left;
     padding-left: 0px;
     color: grey;
-    margin-left: 4%;
+    margin-left: 2.4rem;
     border-bottom: 4px solid #ff6060;
-    font-size: 30px;
-    font-weight: 400;
   }
 }
 
 
 .contact-page, .about-page{
+  h2{
+    text-align: left;
+    padding-left: 85px;
+    color: grey;
+    margin-left: 40px;
+    border-bottom: 4px solid #ff6060;
+  }
+}
+
+
+a.links {
+  margin: 20px 0;
+  padding: 5px 0;
+  box-sizing: border-box;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-weight: bold;
+  &:hover{
+    border-top: 2px solid #f9e879;
+    border-bottom: 2px solid #f9e879;
+    transform: scale(1.1);
+    transition: border-top .6s, border-bottom .3s, transform .3s;
+  }
+}
+
+.contact-page, .about-page{
   position: relative;
   width: 100%;
-  padding: 70px 0 0px;
+  padding: 50px 0 0px;
   height: 100%;
   background-color: white;
 }
 
 .about-page{
   .my-photo img{
-    transform: scale(0.75);
+    transform: scale(0.5);
     position: absolute;
-    left: -5px;
-    top: 10px;
+    left: -20px;
+    top: -15px;
     z-index: 10;
   }
   .content{
@@ -126,23 +142,6 @@ h3{
       margin: 80px auto;
       width: 70%;
     }
-    .links {
-      margin: 50px 0 20px;
-      text-align: center;
-      a{
-        font-weight: bold;
-        padding: 5px 0;
-        box-sizing: border-box;
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
-        &:hover{
-          border-top: 2px solid #f9e879;
-          border-bottom: 2px solid #f9e879;
-          transform: scale(1.1);
-          transition: border-top .6s, border-bottom .3s, transform .3s;
-        }
-      }
-    }
   }
 
   .about-photos{
@@ -150,51 +149,22 @@ h3{
     width: 100%;
     margin: 0;
     padding: 50px 0;
-    .row{
-      padding: 20px 0;
-      li{
-        width: 100%;
-        padding: 0px 10px 10px;
-        img{
-          width: 100%;
-        }
       }
-      @include breakpoint(mobileonly){
-        // max-height: 1050px;
-        // overflow: hidden;
-        // flex-direction: column;
-        // align-items: baseline;
-      }
-    }
-  }
+
 }
 
 .contact-page{
   .my-photo img{
-    transform: scale(.18);
+    transform: scale(.12);
     position: absolute;
-    left: -290px;
-    top: -270px;
+    left: -300px;
+    top: -300px;
   }
   ul{
     @include displayAndJustify(flex, space-around, center);
     flex-direction: column;
     margin: 60px 0;
-    a{
-      margin: 20px 0;
-      padding: 5px 0;
-      box-sizing: border-box;
-      border-top: 2px solid white;
-      border-bottom: 2px solid white;
-      font-weight: bold;
-      &:hover{
-        border-top: 2px solid #f9e879;
-        border-bottom: 2px solid #f9e879;
-        transform: scale(1.1);
-        transition: border-top .6s, border-bottom .3s, transform .3s;
 
-      }
-    }
   }
 }
 

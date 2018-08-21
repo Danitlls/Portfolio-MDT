@@ -1,3 +1,6 @@
+@font-face {
+  font-family: 'barlow-light';
+  src: url("../fonts/Barlow-Light.ttf"); }
 * {
   margin: 0;
   padding: 0;
@@ -379,17 +382,14 @@ template {
 [hidden] {
   display: none; }
 
-@font-face {
-  font-family: 'barlow-light';
-  src: url("../fonts/Barlow-Light.ttf"); }
 * {
-  font-family: 'barlow-light'; }
+  font-family: "barlow-light", sans-serif; }
 
 a {
-  font-family: 'barlow-light' !important; }
+  font-family: "barlow-light", sans-serif !important; }
 
 h1 {
-  font-family: "Poppins";
+  font-family: "barlow-light", sans-serif;
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
@@ -517,7 +517,7 @@ h1 {
   animation: showName .5s 3s;
   animation-fill-mode: forwards;
   text-shadow: 1px 1px 2px grey;
-  font-family: "Poppins", sans-serif;
+  font-family: "barlow-light", sans-serif, sans-serif;
   text-transform: uppercase; }
 
 @keyframes showName {
@@ -597,7 +597,7 @@ h1 {
   background-color: #ff6060;
   color: white;
   cursor: pointer;
-  padding: 16px;
+  padding: 8px;
   border-radius: 10px;
   transition: all 200ms ease-in-out; }
   #topButton:hover {
@@ -714,7 +714,7 @@ body {
 
 a {
   color: black;
-  font-family: "Poppins"; }
+  font-family: "barlow-light", sans-serif; }
   a:focus {
     color: grey; }
   a:hover {
@@ -729,6 +729,9 @@ hr {
   margin-top: 0rem;
   margin-bottom: 0rem; }
 
+h2 {
+  font-size: 1.5rem; }
+
 h3 {
   font-size: 1.3rem; }
 
@@ -736,6 +739,7 @@ h3 {
   margin: 0; }
 
 .works {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -745,16 +749,6 @@ h3 {
   align-content: center; }
   .works a {
     color: #ff6060; }
-
-.works-page {
-  padding: 40px 0;
-  position: relative;
-  padding-left: 3.5%; }
-  .works-page .my-photo img {
-    transform: scale(0.6);
-    position: absolute;
-    left: -22px;
-    top: -10px; }
 
 .a-work li {
   display: flex;
@@ -773,36 +767,47 @@ h3 {
     .a-work li img:hover {
       transform: scale(1.2) translateY(20px); }
 
-.contact-page h2, .about-page h2 {
-  text-align: left;
-  padding-left: 130px;
-  color: grey;
-  margin-left: 40px;
-  border-bottom: 4px solid #ff6060; }
-
 .works-page img {
   display: none; }
 .works-page h2 {
   text-align: left;
   padding-left: 0px;
   color: grey;
-  margin-left: 4%;
-  border-bottom: 4px solid #ff6060;
-  font-size: 30px;
-  font-weight: 400; }
+  margin-left: 2.4rem;
+  border-bottom: 4px solid #ff6060; }
+
+.contact-page h2, .about-page h2 {
+  text-align: left;
+  padding-left: 85px;
+  color: grey;
+  margin-left: 40px;
+  border-bottom: 4px solid #ff6060; }
+
+a.links {
+  margin: 20px 0;
+  padding: 5px 0;
+  box-sizing: border-box;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-weight: bold; }
+  a.links:hover {
+    border-top: 2px solid #f9e879;
+    border-bottom: 2px solid #f9e879;
+    transform: scale(1.1);
+    transition: border-top .6s, border-bottom .3s, transform .3s; }
 
 .contact-page, .about-page {
   position: relative;
   width: 100%;
-  padding: 70px 0 0px;
+  padding: 50px 0 0px;
   height: 100%;
   background-color: white; }
 
 .about-page .my-photo img {
-  transform: scale(0.75);
+  transform: scale(0.5);
   position: absolute;
-  left: -5px;
-  top: 10px;
+  left: -20px;
+  top: -15px;
   z-index: 10; }
 .about-page .content {
   padding: 30px;
@@ -815,55 +820,22 @@ h3 {
     .about-page .content {
       margin: 80px auto;
       width: 70%; } }
-  .about-page .content .links {
-    margin: 50px 0 20px;
-    text-align: center; }
-    .about-page .content .links a {
-      font-weight: bold;
-      padding: 5px 0;
-      box-sizing: border-box;
-      border-top: 2px solid white;
-      border-bottom: 2px solid white; }
-      .about-page .content .links a:hover {
-        border-top: 2px solid #f9e879;
-        border-bottom: 2px solid #f9e879;
-        transform: scale(1.1);
-        transition: border-top .6s, border-bottom .3s, transform .3s; }
 .about-page .about-photos {
   width: 100%;
   margin: 0;
   padding: 50px 0; }
-  .about-page .about-photos .row {
-    padding: 20px 0; }
-    .about-page .about-photos .row li {
-      width: 100%;
-      padding: 0px 10px 10px; }
-      .about-page .about-photos .row li img {
-        width: 100%; }
 
 .contact-page .my-photo img {
-  transform: scale(0.18);
+  transform: scale(0.12);
   position: absolute;
-  left: -290px;
-  top: -270px; }
+  left: -300px;
+  top: -300px; }
 .contact-page ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   margin: 60px 0; }
-  .contact-page ul a {
-    margin: 20px 0;
-    padding: 5px 0;
-    box-sizing: border-box;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    font-weight: bold; }
-    .contact-page ul a:hover {
-      border-top: 2px solid #f9e879;
-      border-bottom: 2px solid #f9e879;
-      transform: scale(1.1);
-      transition: border-top .6s, border-bottom .3s, transform .3s; }
 
 footer {
   text-align: center;
@@ -928,21 +900,21 @@ header {
     right: 0px; }
 
   .d-logo {
-    background: #f9e879;
+    border: 10px solid #f9e879;
     border-radius: 0 50% 50% 0;
     width: 70px;
     height: 70px;
-    transition: all .3s; }
+    transition: all .3s;
+    text-shadow: 1px 1px 2px white; }
     .d-logo:hover {
       background: darksalmon;
-      color: white; }
+      color: white;
+      text-shadow: none;
+      border: 10px solid darksalmon; }
 
   .d-logo h6 {
-    padding-bottom: 18px;
-    letter-spacing: .1rem;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-orientation: sideways-right; }
+    padding-top: 15px;
+    letter-spacing: .1rem; }
 
   nav p {
     padding-bottom: 0;
@@ -978,7 +950,7 @@ header {
         transition: all .3s; }
         nav.large-screen .links.large-links a:hover {
           background-color: #f9a8a8;
-          color: #6b6060;
+          color: white;
           text-shadow: 1px 1px #f1bebead;
           border-bottom: 3px solid #f9e87900; } }
 .my-photo-space {

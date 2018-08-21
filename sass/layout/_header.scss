@@ -52,22 +52,23 @@ header{
 
   //for projects
   .d-logo {
-    background:$color-accent;
-    border-radius:0 50% 50% 0;
+    border: 10px solid $color-accent;
+    border-radius: 0 50% 50% 0;
     width: 70px;
     height: 70px;
     transition: all .3s;
+    text-shadow: 1px 1px 2px white;
     &:hover{
       background: darksalmon;
       color: white;
+      text-shadow: none;
+      border: 10px solid darksalmon;
     }
   }
   .d-logo h6{
-    padding-bottom: 18px;
+    padding-top: 15px;
     letter-spacing: .1rem;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-orientation: sideways-right;
+
   }
   nav p {
     padding-bottom: 0;
@@ -99,7 +100,7 @@ header{
         transition: all .3s;
         &:hover {
           background-color: #f9a8a8;
-          color: #6b6060;
+          color: white;
           text-shadow: 1px 1px #f1bebead;
           border-bottom: 3px solid #f9e87900;
         }
