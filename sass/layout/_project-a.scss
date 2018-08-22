@@ -1,12 +1,10 @@
 .my-photo-space {
   @include displayAndJustify(flex, center, center);
-  height: 400px;
+  min-height: 80vh;
   background-image: url("../img/star_field_full_gal.jpg");
-  background-size: contain;
-  font-size: 30px;
-
+  background-size: cover;
   img{
-    width: 500px;
+    width: 70%;
   }
 }
 

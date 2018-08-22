@@ -649,12 +649,12 @@ div.work-description {
   background-color: white;
   color: black;
   position: absolute;
-  top: 110px;
   text-align: center;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-left: 16%;
+  top: 100px;
   left: 10%;
   border: 2px solid grey;
   transition: all .6s; }
@@ -674,7 +674,6 @@ div.border {
   padding: 10px;
   position: relative;
   margin: 4%;
-  border-radius: 10px;
   transition: all .25s; }
   div.border a {
     border-bottom: 2px solid red; }
@@ -689,11 +688,9 @@ div.border {
 @media all and (min-width: 750px) {
   div.border {
     width: 45%;
-    height: 340px;
-    padding: 20px;
     position: relative;
     margin: 5px;
-    margin-bottom: 2rem; }
+    margin-top: 1.2rem; }
 
   div.work-description {
     width: 45%;
@@ -701,11 +698,8 @@ div.border {
     padding: 2%;
     background-color: white;
     position: absolute;
-    top: 110px;
     left: 12%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center; }
+    flex-wrap: nowrap; }
 
   div.work-description-tittle {
     text-align: center; } }
@@ -739,7 +733,7 @@ h3 {
   margin: 0; }
 
 .works {
-  padding-top: 50px;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -820,6 +814,8 @@ a.links {
     .about-page .content {
       margin: 80px auto;
       width: 70%; } }
+.about-page a.links h3 {
+  display: inline; }
 .about-page .about-photos {
   width: 100%;
   margin: 0;
@@ -957,12 +953,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  min-height: 80vh;
   background-image: url("../img/star_field_full_gal.jpg");
-  background-size: contain;
-  font-size: 30px; }
+  background-size: cover; }
   .my-photo-space img {
-    width: 500px; }
+    width: 70%; }
 
 .block1 {
   position: relative;

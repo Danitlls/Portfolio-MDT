@@ -57,12 +57,12 @@ div.work-description {
   background-color: white;
   color: black;
   position: absolute;
-  top: 110px;
   text-align: center;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-left: 16%;
+  top: 100px;
   left: 10%;
   border: 2px solid grey;
   transition: all .6s;
@@ -89,7 +89,7 @@ div.border {
   padding: 10px;
   position: relative;
   margin: 4%;
-  border-radius: 10px;
+  // border-radius: 10px;
   transition: all .25s;
   a{
     border-bottom: 2px solid red;
@@ -129,11 +129,11 @@ div.border {
 @media all and (min-width: 750px){
   div.border{
     width: 45%;
-    height: 340px;
-    padding: 20px;
+    // height: 340px;
+    // padding: 20px;
     position: relative;
     margin: 5px;
-    margin-bottom: 2rem;
+    margin-top: 1.2rem;
     // &:hover {
     //   div.work-description{
     //     transform: translateX(40%) translateY(80px);
@@ -152,11 +152,8 @@ div.border {
     padding: 2%;
     background-color: white;
     position: absolute;
-    top: 110px;
     left: 12%;
-    display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
 
   }
   div.work-description-tittle{
