@@ -597,12 +597,13 @@ h1 {
   background-color: #ff6060;
   color: white;
   cursor: pointer;
-  padding: 8px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 50%;
   transition: all 200ms ease-in-out; }
   #topButton:hover {
     transform: scale(1.1);
-    background-color: #f9e879; }
+    background-color: #f9e879;
+    color: grey; }
 
 div.work-image {
   /* box-shadow: 1px 5px 7px #b4b4b4; */
@@ -819,7 +820,7 @@ a.links {
 .about-page .about-photos {
   width: 100%;
   margin: 0;
-  padding: 50px 0; }
+  padding: 50px 0 0; }
 
 .contact-page .my-photo img {
   transform: scale(0.12);
@@ -836,8 +837,8 @@ a.links {
 footer {
   text-align: center;
   color: #ecf0f1;
-  height: 70px;
-  padding: 2% 20%;
+  height: 100px;
+  padding: 2rem 20%;
   background-color: black; }
 
 header {
@@ -928,7 +929,7 @@ header {
       align-items: center; }
       nav.large-screen .links.large-links a {
         cursor: pointer;
-        background-color: #f1f1f1;
+        background-color: #fff;
         width: 78px;
         height: 70px;
         text-align: center;
