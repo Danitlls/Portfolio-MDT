@@ -471,7 +471,7 @@ h1 {
 
 @keyframes hideIntro {
   100% {
-    height: 180px; } }
+    height: 250px; } }
 .d {
   height: 125px;
   width: 125px;
@@ -813,7 +813,7 @@ a.links {
   background-color: white; }
   @media (min-width: 1200px) {
     .about-page .content {
-      margin: 80px auto;
+      margin: 50px auto;
       width: 70%; } }
 .about-page a.links h3 {
   display: inline; }
