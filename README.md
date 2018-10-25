@@ -5,7 +5,7 @@
 
 ## Description
 
-* Personal porfolio, styled with SASS
+* Personal portfolio, styled with SASS
 
 ## Support and contact details
 
@@ -17,7 +17,7 @@
 
 * HTML
 * CSS
-* Sass
+* SASS
 * JS
 
 ## License
